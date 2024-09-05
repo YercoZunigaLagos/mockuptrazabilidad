@@ -60,17 +60,17 @@ const sidebarItem: menu[] = [
   {
     title: 'Recepcion',
     icon: KeyIcon,
-    to: '/auth',
+    to: '/reception',
     children: [
       {
         title: 'Añadir Recepcion',
         icon: CircleIcon,
-        to: '/auth/login'
+        to: '/reception/create'
       },
       {
         title: 'Revisor recepciones',
         icon: CircleIcon,
-        to: '/auth/login'
+        to: '/reception/view'
       }
     ]
   },

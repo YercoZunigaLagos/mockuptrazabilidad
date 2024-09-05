@@ -22,6 +22,16 @@ const MainRoutes = {
       component: () => import('@/views/StarterPage.vue')
     },
     {
+      name: 'Create Reception',
+      path: '/reception/create',
+      component: () => import('@/views/MateriaPrima/CreateReception.vue')
+    },
+    {
+      name: 'View Reception',
+      path: '/reception/view',
+      component: () => import('@/views/MateriaPrima/ViewReception.vue')
+    },
+    {
       name: 'Tabler Icons',
       path: '/icons/tabler',
       component: () => import('@/views/utilities/icons/TablerIcons.vue')
