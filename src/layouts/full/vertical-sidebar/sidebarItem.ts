@@ -28,35 +28,187 @@ export interface menu {
 }
 
 const sidebarItem: menu[] = [
-  { header: 'Dashboard' },
+  
   {
-    title: 'Default',
+    title: 'Dashboard',
     icon: DashboardIcon,
     to: '/dashboard/default'
   },
   { divider: true },
-  { header: 'Pages' },
+  { header: 'Analisis' },
   {
-    title: 'Authentication',
+    title: 'Reportes',
     icon: KeyIcon,
     to: '/auth',
     children: [
       {
-        title: 'Login',
+        title: 'Personal En Planta',
         icon: CircleIcon,
         to: '/auth/login'
       },
       {
-        title: 'Register',
+        title: 'Produccion Turno',
         icon: CircleIcon,
-        to: '/auth/register'
+        to: '/auth/login'
+      }
+      
+    ]
+  },
+  
+  { divider: true },
+  { header: 'Materia Prima' },
+  {
+    title: 'Recepcion',
+    icon: KeyIcon,
+    to: '/auth',
+    children: [
+      {
+        title: 'Añadir Recepcion',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Revisor recepciones',
+        icon: CircleIcon,
+        to: '/auth/login'
       }
     ]
   },
+  { divider: true },
+  { header: 'Procedimiento' },
   {
-    title: 'Error 404',
-    icon: BugIcon,
-    to: '/pages/error'
+    title: 'P. Fresco',
+    icon: KeyIcon,
+    to: '/auth',
+    children: [
+      {
+        title: 'Lavado',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Escaldado',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Corte y calibrado',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Desgrane',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Despesonado',
+        icon: CircleIcon,
+        to: '/auth/login'
+      }
+
+    ]
+  },
+  {
+    title: 'Congelado',
+    icon: KeyIcon,
+    to: '/auth',
+    children: [
+      {
+        title: 'Camara 0',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Tuneles',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Producto por envasar',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Proceso Envasado',
+        icon: CircleIcon,
+        to: '/auth/login'
+      }
+
+    ]
+  },
+  {
+    title: 'P. Envasado',
+    icon: KeyIcon,
+    to: '/auth',
+    children: [
+      {
+        title: 'Envasado',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Informes Proceso',
+        icon: CircleIcon,
+        to: '/auth/login'
+      }
+
+    ]
+  },
+  { divider: true },
+  { header: 'Inventario' },
+  {
+    title: 'Stock',
+    icon: KeyIcon,
+    to: '/auth',
+    children: [
+      {
+        title: 'Camara 0',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Camara 1',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Camara 2',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Tuneles',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Reefers',
+        icon: CircleIcon,
+        to: '/auth/login'
+      }
+
+    ]
+  },
+  { divider: true },
+  { header: 'Distribucion' },
+  {
+    title: 'Despacho',
+    icon: KeyIcon,
+    to: '/auth',
+    children: [
+      {
+        title: 'Generar Despacho',
+        icon: CircleIcon,
+        to: '/auth/login'
+      },
+      {
+        title: 'Historico',
+        icon: CircleIcon,
+        to: '/auth/login'
+      }
+
+    ]
   },
   { divider: true },
   { header: 'Utilities' },
